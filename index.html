@@ -11,16 +11,21 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 150vh; /* Set the minimum height to 150 viewport heights */
+            min-height: 150vh;
             margin: 0;
         }
 
-        header, footer {
-            background-color: #f2f2f2;
+        header {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #17a2b8;
+            color: rgb(255, 255, 255);
             padding: 10px;
+            font-size: 30px;
+            word-spacing: 10px;
             text-align: center;
-            width: 100%;
-            margin-bottom: 200px; /* Add margin to the bottom of the header and top of the footer */
+            margin-bottom: 20px; /* Add margin to the bottom of the header */
         }
 
         .button-container {
@@ -35,8 +40,8 @@
             font-size: 16px;
             text-decoration: none;
             width: 100px;
-            text-align: center; /* Center the text inside the buttons */
-            margin: 5px; /* Add margin to both buttons */
+            text-align: center;
+            margin: 5px;
         }
 
         #button1 {
@@ -48,12 +53,34 @@
             background-color: #e74c3c;
             color: #fff;
         }
+
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            margin-top: auto; /* Push the footer to the bottom of the container */
+        }
+
+        .footer-details {
+            margin: 30px auto;
+            width: 75%;
+        }
+
+        .footer-details p {
+            margin: 30px 0;
+        }
+
+        .footer-details a {
+            margin: 30px;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1 style="margin-top: 200px;">Your Heading Here</h1>
+        <h1>15linequran.com</h1>
     </header>
 
     <div class="button-container">
@@ -64,8 +91,19 @@
         <a href="your_second_link_url" id="button2">JUZ</a>
     </div>
 
-    <footer>
-        <p>Your Footer Content Here</p>
+    <footer class="black-bg">
+        <div class="footer-details">
+            <p>15linequran.com</p>
+            <p>Owner: AMAN SAIFI</p>
+            <p>Email: mramansaifi78602@gmail.com</p>
+            <a href="https://www.instagram.com/abdullahsays.in/" target="_blank">
+                <img src="https://i.imgur.com/K6trBVzs.jpg" alt="Instagram" width="30" height="30">
+            </a>
+            <a href="https://youtube.com/@AMANSAIFIOFFICIAL?si=ZekPwLN_h6rex-ky">
+                <img src="https://i.imgur.com/3jlHkPM.jpg" alt="YouTube" width="30" height="30">
+            </a>
+            <p>All rights reserved. ©15linequran.com</p>
+        </div>
     </footer>
 
 </body>
