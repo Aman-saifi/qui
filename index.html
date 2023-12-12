@@ -3,32 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Example</title>
+    <title>Image Background with Buttons</title>
 
-
-<style>
+    <style>
         body {
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value for the desired level of transparency */
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
-            margin: 0;
         }
 
         button {
             padding: 10px;
             font-size: 16px;
-            width: 100px; /* Set a fixed width for the buttons */
-            margin-right: 20px;
-            position: center;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            margin-right: 10px;
         }
     </style>
-
 </head>
 <body>
 
-<button onclick="suraButtonClick()">SURA</button>
-<button onclick="juzButtonClick()">Juz</button>
+<div class="overlay"></div>
+
+<div class="content">
+    <button onclick="suraButtonClick()">SURA</button>
+    <button onclick="juzButtonClick()">Juz</button>
+</div>
 
 <script>
     function suraButtonClick() {
@@ -43,4 +67,4 @@
 </script>
 
 </body>
-</html>
+</html
