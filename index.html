@@ -8,10 +8,18 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+        }
+
+        header, footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
         }
 
         .button-container {
@@ -43,6 +51,10 @@
 </head>
 <body>
 
+    <header>
+        <h1>Your Heading Here</h1>
+    </header>
+
     <div class="button-container">
         <!-- First Button as a Link -->
         <a href="your_first_link_url" id="button1">SURAH</a>
@@ -50,6 +62,10 @@
         <!-- Second Button as a Link -->
         <a href="your_second_link_url" id="button2">JUZ</a>
     </div>
+
+    <footer>
+        <p>Your Footer Content Here</p>
+    </footer>
 
 </body>
 </html>
