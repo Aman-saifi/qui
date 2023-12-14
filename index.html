@@ -28,7 +28,6 @@
 
         #container {
             position: relative;
-            height: 84vh;
         }
 
        
@@ -47,6 +46,18 @@
         background-size: cover;
         background-position: center;
     }
+
+    #container {
+            position: relative;
+            height: 100vh; /* Default height for PC */
+        }
+
+        @media only screen and (max-width: 767px) {
+            /* Styles for phones */
+            #container {
+                height: 84vh;
+            }
+        }
 }
 
         #button1,
