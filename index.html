@@ -43,31 +43,11 @@
 /* Desktop styles */
 @media only screen and (min-width: 768px) {
     #container {
-        background-image: url('https://drive.google.com/uc?id=1PWflbFZ8MLckho3iMDUGVrROcN_0Pbl-');
+        background-image: url('https://drive.google.com/uc?id=1PeT0Arj7do5ccyBDf1NnjlF4Z4tQISkj');
         background-size: cover;
         background-position: center;
         position: relative; /* Needed for z-index */
     
-    }
-
-    #content {
-        position: relative; /* Ensure content is positioned correctly */
-        z-index: 1; /* Place content above the blurred background */
-    }
-
-    #container::before {
-        content: ''; /* Create a pseudo-element for the blur effect */
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: inherit;
-        background-size: cover;
-        background-position: inherit;
-        filter: blur(10px); /* Adjust the blur strength as needed */
-        opacity: 0.5; /* Add opacity of 0.5 */
-        z-index: -1; /* Place the pseudo-element behind the content */
     }
 }
 
@@ -117,6 +97,11 @@
             border: 2px solid #28a745;
             color: #000;
         }
+
+        #button1:hover {
+    background-color: #28a745; /* Change the background color on hover */
+    color: #fff; /* Change the text color on hover */
+}
 
         
 
