@@ -25,7 +25,7 @@
             word-spacing: 10px;
             text-align: center;
             border-bottom: 2px solid #000;
-            border-top: 2px solid #000;
+            border-top: 3px solid #000;
             
         }
 
@@ -118,10 +118,14 @@
     }
 
         @media only screen and (min-width: 768px) {
-        #button1:hover,
+        #button1:hover {
+            background-color: #53cbfc; /* Change the background color on hover */
+            color: #000;/* Replace 'YourFirstBackgroundColor' with the desired background color for button1 */
+        }
+
         #button2:hover {
-            background-color: initial; /* Set the background color to its initial state on hover */
-            color: initial; /* Set the text color to its initial state on hover */
+            background-color: #28a745; /* Change the background color on hover */
+            color: #000; /* Replace 'YourSecondBackgroundColor' with the desired background color for button2 */
         }
     }
         
